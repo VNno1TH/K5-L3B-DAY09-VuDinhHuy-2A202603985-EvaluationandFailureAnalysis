@@ -32,7 +32,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 - **Judge:**
   - `tone_ok`: κ = 0.757, P = 0.857, R = 0.800 (Đạt FLOORS: κ ≥ 0.6, P ≥ 0.8, R ≥ 0.7) ⇒ Dùng làm evaluator chất lượng phản hồi.
   - `helpful`: κ = 0.375, P = 1.000, R = 0.300 ⇒ Bị loại vì bỏ sót 70% lỗi thực tế (fn = 21/30).
-- **Trace case:** Chi tiết tại [docs/trace_case.md](file:///home/huyvu/Lab9/K5-L3B-DAY09-VuDinhHuy-2A202603985-EvaluationandFailureAnalysis/docs/trace_case.md); bước sai đầu tiên tại Event 3 `model_override {"delay_days": 5}` được chặn bởi `DbFactKept` và `RefundAmountCorrect`.
+- **Trace case:** Chi tiết tại [trace_case.md](trace_case.md); bước sai đầu tiên tại Event 3 `model_override {"delay_days": 5}` được chặn bởi `DbFactKept` và `RefundAmountCorrect`.
 - **Gate owner:** Vũ Đình Huy (Release & Evaluation Engineer)
 - **Phạm vi pilot:** Áp dụng cho các đơn hàng giao trễ hoặc hư hỏng nội địa có 1 yêu cầu/đơn, số tiền hoàn ≤ 500.000đ.
 - **Giới hạn / bằng chứng còn thiếu:**
