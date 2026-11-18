@@ -1,4 +1,4 @@
-# Failure taxonomy v1 (bạn điền)
+# Failure taxonomy v1
 | ID | Tên | Định nghĩa (1 câu) | Layer | Bằng chứng (claim@seed / trace) | Grader | Metric |
 |---|---|---|---|---|---|---|
 | FM-01 | leaky_trace — secret lộ trong trace | Bí mật phụ huynh, token xác thực hoặc PII nhạy cảm bị ghi trực tiếp vào payload của trace | tool/schema | C-001@11 (raw_headers chứa Bearer secret), C-005@11 | code (SecretLeak) | secret_leak |
